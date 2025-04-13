@@ -18,6 +18,6 @@ app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 @app.get("/read-columns")
 def read_excel_columns(columns: str):
-    col_list = columns.split(",")
+    col_list = [col.strip() for col in columns.split(",")]
     df = pd.read_excel("data/myfile.xlsx", usecols=col_list)
     return df.to_dict(orient="records")
