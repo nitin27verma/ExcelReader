@@ -2,7 +2,7 @@
 1. Set this as the App Service startup command: bash startup.sh
 
 # Local Development
-1. Clone the repository: git clone https://github.com/<repo>.git
+1. Clone the repository: git clone https://github.com/nitin27verma/ExcelReader.git
 2. cd ExcelReader
 3. Create a virtual environment and activate it:
 4. python3 -m venv venv
